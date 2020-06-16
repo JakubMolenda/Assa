@@ -27,9 +27,9 @@ public class MyAppController {
                        RedirectAttributes redirectAttributes ) {
         boolean isMale = myAppService.isMale(myAppForm.getName());
         if (isMale) {
-            redirectAttributes.addFlashAttribute("gender", "man");
+            redirectAttributes.addFlashAttribute("gender", "mezczyzna");
         } else {
-            redirectAttributes.addFlashAttribute("gender", "woman");
+            redirectAttributes.addFlashAttribute("gender", "kobieta");
         }
 
         return "redirect:/";
